@@ -1,21 +1,19 @@
 // Code EyesOnMe Component Here
+
+
 import React from 'react';
 
-export default class Keypad extends React.Component {
+export default class EyesOnMe extends React.Component {
 
-  handleLeaving = () => {
-    console.log('Entering password...')
-    
-  }
+  handleFocus  = () => console.log('Hi!')
+
+  handleBlur  = () => console.log('Hey! Eyes on me!')
 
   render() {
     return (
-      <div>
-        <input
-          type="password"
-          onKeyUp={this.handleLeaving}
-        />
-      </div>
+      <button onFocus={this.handleFocus } onBlur={this.handleBlur }>
+        Eyes on me, please!
+      </button>
     )
   }
 }
