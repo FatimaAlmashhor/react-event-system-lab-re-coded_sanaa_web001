@@ -7,7 +7,7 @@ export default class EyesOnMe extends React.Component {
 
   handleFocus  = () => 
   {
-    console.log('Hi!') 
+    console.log('Good!') 
     
   }
 
